@@ -1,0 +1,156 @@
+body {
+  font-family: "Belanosima", sans-serif;
+  background: #c6e3e9;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", monospace;
+}
+
+.container {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.container > div {
+  margin: 20px auto;
+}
+
+.intro {
+  text-align: center;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.i-am {
+  text-align: center;
+}
+
+.i-like {
+  text-align: center;
+}
+
+.about-list {
+  list-style: none;
+}
+
+@media (max-width: 400px) {
+  .about-grid {
+    grid-template-columns: 100%;
+  }
+}
+
+.projects-heading {
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.profile-image-wrapper {
+  justify-self: center;
+  padding: 4%;
+  position: relative;
+}
+
+.projects-image {
+  border-radius: 5px;
+  box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.1);
+  transition: all ease-in-out 0.2%;
+}
+
+.projects-image:hover {
+  filter: brightness(0.75);
+  box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.1);
+}
+
+.profile-image-wrapper:hover > h4 {
+  visibility: visible;
+}
+.profile-image-wrapper > h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  visibility: hidden;
+  z-index: 2;
+  transition: all ease-in-out 0.2%;
+}
+
+@media (max-width: 650px) {
+  .projects-grid {
+    grid-template-columns: 100%;
+  }
+}
+
+.links-and-contact {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.links {
+  justify-self: center;
+}
+
+.links-list {
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 650px) {
+  .links-and-contact {
+    grid-template-columns: 100%;
+  }
+}
+
+.my-pic {
+  width: 300px;
+  height: 220px;
+  object-fit: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
+  transition: all ease-in-out 0.2%;
+}
+
+.my-pic:hover {
+  box-shadow: 0 8px 12px 0 rgba(34, 60, 80 0.16);
+}
+
+form input,
+textarea {
+  padding: 5px;
+  border-radius: 5px;
+  width: 240px;
+}
+
+form input[type="submit"] {
+  width: 250px;
+}
+
+.submit-button-wrapper {
+  margin: 20px 0;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+/* Element selector (p, h3)
+Class selector (.)
+ID selector (#) */
